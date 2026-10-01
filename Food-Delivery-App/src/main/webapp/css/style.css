@@ -1,0 +1,79 @@
+* { box-sizing: border-box; }
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f6f7f9;
+    color: #222;
+}
+nav {
+    background: #ff5a1f;
+    padding: 14px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .brand { color: #fff; font-size: 20px; font-weight: 700; text-decoration: none; }
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+nav a:hover { text-decoration: underline; }
+.container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+h1, h2, h3 { margin-top: 0; }
+.btn {
+    display: inline-block;
+    background: #ff5a1f;
+    color: #fff;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+}
+.btn:hover { background: #e14e15; }
+.btn.secondary { background: #555; }
+.btn.danger { background: #cc3333; }
+.btn.small { padding: 5px 10px; font-size: 12px; }
+input, select, textarea {
+    width: 100%;
+    padding: 9px;
+    margin: 6px 0 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+label { font-weight: 600; font-size: 13px; }
+form { max-width: 420px; }
+.form-wide { max-width: 100%; }
+.alert { padding: 10px 14px; border-radius: 6px; margin-bottom: 16px; font-size: 14px; }
+.alert.error { background: #fdeaea; color: #a33; border: 1px solid #f3bcbc; }
+.alert.success { background: #e9f9ee; color: #237a3f; border: 1px solid #b7e6c4; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; }
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+.badge.PLACED { background: #999; }
+.badge.CONFIRMED { background: #3b82f6; }
+.badge.OUT_FOR_DELIVERY { background: #f59e0b; }
+.badge.DELIVERED { background: #22c55e; }
+.badge.CANCELLED { background: #cc3333; }
+.price { font-weight: 700; color: #ff5a1f; }
+.muted { color: #777; font-size: 13px; }
+.inline-form { display: inline; }
